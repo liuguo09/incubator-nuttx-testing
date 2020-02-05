@@ -15,6 +15,8 @@ jobs:
     - name: Install tools
       run: |
         echo Install tools,
+        sudo dpkg --add-architecture i386
+        sudo apt-get -y update
         sudo apt-get -y install automake bison build-essential flex gperf
         sudo apt-get -y install lib32ncurses5-dev libc6-dev-i386 libx11-dev:i386 libxext-dev:i386
         ./cibuild.sh -i
