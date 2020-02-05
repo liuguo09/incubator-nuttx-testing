@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@github-action-test-1
+    - name: Install tools
+      run: echo Install tools!
+    - name: Setup repos
+      run: |
+        echo Add other actions to build,
+        echo Setup repos.
