@@ -13,5 +13,5 @@ jobs:
       run: echo Install tools!
     - name: Setup repos
       run: |
-        echo Add other actions to build,
-        echo Setup repos.
+        echo Setup repos,
+        ./cibuild.sh -s
