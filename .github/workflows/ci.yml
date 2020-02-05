@@ -13,8 +13,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install tools
-      run: echo Install tools!
+      run: |
+        echo Install tools,
+        ./cibuild.sh -i
     - name: Setup repos
       run: |
         echo Setup repos,
         ./cibuild.sh -s
+    - name: Run builds
+      run: |
+        echo Run nightly build,
+        ./cibuild.sh -b full
