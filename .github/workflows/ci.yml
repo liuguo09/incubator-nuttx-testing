@@ -15,6 +15,7 @@ jobs:
     - name: Install tools
       run: |
         echo Install tools,
+        sudo apt-get install flex,
         ./cibuild.sh -i
     - name: Setup repos
       run: |
