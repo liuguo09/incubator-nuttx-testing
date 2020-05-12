@@ -263,7 +263,7 @@ function setup_repos {
   if [ -d "$nuttx" ]; then
     cd $nuttx; git pull
   else
-    git clone https://github.com/apache/incubator-nuttx.git $nuttx
+    git clone https://github.com/liuguo09/incubator-nuttx.git $nuttx
     cd $nuttx
   fi
   git log -1
@@ -271,7 +271,7 @@ function setup_repos {
   if [ -d "$apps" ]; then
     cd $apps; git pull
   else
-    git clone https://github.com/apache/incubator-nuttx-apps.git $apps
+    git clone https://github.com/liuguo09/incubator-nuttx-apps.git $apps
     cd $apps
   fi
   git log -1
