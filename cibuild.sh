@@ -23,7 +23,7 @@
 #  - autoconf
 #  - wget
 
-set -e
+set -ex
 
 WD=$(cd $(dirname $0) && pwd)
 WORKSPACE=$(cd $WD/.. && pwd -P)
